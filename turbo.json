@@ -6,6 +6,10 @@
             "outputs": ["**/dist"]
         },
         "dev": {},
-        "test": {}
+        "deploy": {
+            "cache": true,
+            "inputs": ["**/dist"],
+            "dependsOn": ["build"]
+        }
     }
 }
